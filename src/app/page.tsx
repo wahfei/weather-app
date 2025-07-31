@@ -120,7 +120,6 @@ export default function Home() {
 					<CurrentWeather
 						weatherData={weatherData}
 						location={submittedLocation}
-						inputData={locationInput}
 					/>
 
 					{/* History */}

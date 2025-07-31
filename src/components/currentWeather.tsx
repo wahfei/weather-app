@@ -7,13 +7,13 @@ import CloudImage from "@/app/assets/cloud.png";
 import SunImage from "@/app/assets/sun.png";
 import Image from "next/image";
 
-export default function CurrentWeather({ weatherData, location, inputData }: { weatherData: Weather | null; location: string; inputData: string }) {
+export default function CurrentWeather({ weatherData, location }: { weatherData: Weather | null; location: string; }) {
 	const currentTime = getDateTime(new Date());
 
 	return (
 		<>
 			{!weatherData ? (
-				<p className="text-center">No weather data available for <b className="text-red-600">{inputData}</b></p>
+				<p className="text-center">No weather data available</p>
 			) : (
 				<div className="flex justify-between items-end">
 					<div className="flex flex-col gap-2">
